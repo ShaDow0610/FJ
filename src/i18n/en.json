@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "partners": "Partners",
+    "shop": "Products & Services",
+    "future": "Future Partnerships",
+    "masterclass": "Masterclass",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "ui": {
+    "read_more": "Read more",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading…",
+    "soon": "Coming soon",
+    "view_all": "View all",
+    "add_to_cart": "Add to cart",
+    "choose_pieces": "Choose pieces",
+    "price_from": "From",
+    "filters": {
+      "all": "All",
+      "casual": "Casual",
+      "street": "Street",
+      "studio": "Studio"
+    }
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "type": "Request type",
+    "success": "Thank you! We’ll get back to you shortly."
+  },
+  "footer": {
+    "brand_line": "A fashion & influence universe, shaped by light.",
+    "rights": "All rights reserved."
+  },
+  "shop": {
+    "bundle": "Bundle",
+    "pieces": "Pieces",
+    "total": "Total"
+  },
+  "masterclass": {
+    "countdown": "Opens in",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "waitlist_cta": "Join the waitlist"
+  }
+}

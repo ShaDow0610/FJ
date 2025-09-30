@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "gallery": "Galerie",
+    "partners": "Partenaires",
+    "shop": "Produits & Services",
+    "future": "Futurs Partenariats",
+    "masterclass": "Masterclass",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "ui": {
+    "read_more": "En savoir plus",
+    "close": "Fermer",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "loading": "Chargement…",
+    "soon": "Bientôt",
+    "view_all": "Voir tout",
+    "add_to_cart": "Ajouter au panier",
+    "choose_pieces": "Choisir les pièces",
+    "price_from": "À partir de",
+    "filters": {
+      "all": "Tous",
+      "casual": "Casual",
+      "street": "Street",
+      "studio": "Studio"
+    }
+  },
+  "form": {
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "type": "Type de demande",
+    "success": "Merci ! Nous revenons vers vous très vite."
+  },
+  "footer": {
+    "brand_line": "Un univers mode & influence, sculpté par la lumière.",
+    "rights": "Tous droits réservés."
+  },
+  "shop": {
+    "bundle": "Ensemble",
+    "pieces": "Pièces",
+    "total": "Total"
+  },
+  "masterclass": {
+    "countdown": "Ouverture dans",
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes",
+    "waitlist_cta": "Rejoindre la liste d’attente"
+  }
+}

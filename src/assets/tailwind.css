@@ -1,0 +1,9 @@
+@import "tailwindcss";
+:root{
+  --brand-black:#0b0b0c;        /* noir profond */
+  --brand-:#f5efe6;        /* ivoire */
+  --brand-gold:#caa45f;      /* or */
+  --brand-:#b0142b;    /* rouge couture (option) */
+}
+html{ color-scheme: dark; }
+body{ background: var(--brand-black); }

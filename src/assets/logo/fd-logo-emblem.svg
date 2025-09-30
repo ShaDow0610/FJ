@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  
+  <!-- Circular emblem ring -->
+  <circle cx="512" cy="512" r="470" fill="none" stroke="#C6A24A" stroke-width="20"/>
+  <!-- FD inside -->
+  <rect x="256" y="202" width="96" height="640" rx="16" fill="#0B0B0C"/>
+  <rect x="256" y="202" width="300" height="96" rx="16" fill="#0B0B0C"/>
+  <rect x="256" y="450" width="240" height="80"  rx="14" fill="#0B0B0C"/>
+  <path d="M590 202 A 310 310 0 0 1 590 822" fill="none" stroke="#C6A24A" stroke-width="96" stroke-linecap="round"/>
+  <rect x="526" y="388" width="24" height="24" transform="rotate(45 538 400)" fill="#E01E37" opacity="0.9"/>
+</svg>
