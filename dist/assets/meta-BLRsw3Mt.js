@@ -1,1 +1,0 @@
-function d({title:t,description:n}){if(!(typeof document>"u")&&(t&&(document.title=t),n)){let e=document.querySelector('meta[name="description"]');e||(e=document.createElement("meta"),e.setAttribute("name","description"),document.head.appendChild(e)),e.setAttribute("content",n)}}export{d as s};
