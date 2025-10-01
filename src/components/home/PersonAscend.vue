@@ -4,20 +4,20 @@ import { ref, reactive, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 import { gsap } from '@/plugins/gsap'
 import { useReducedMotion } from '@/composables/useReducedMotion'
 
-import project1 from "/project1.jpg"
-import project2 from "/project2.jpg"
-import project3 from "/project3.jpg"
-import project4 from "/project4.jpg"
-import project5 from "/project5.jpg"
-import imageOfProject1 from "/imageOfProject1.jpg"
-import imageOfProject2 from "/imageOfProject2.jpg"
-import imageOfProject3 from "/imageOfProject3.jpg"
-import imageOfProject4 from "/imageOfProject4.jpg"
-import imageOfProject5 from "/imageOfProject5.jpg"
+import project1 from '/imageOfProject1.png'
+import project2 from '/imageOfProject2.png'
+import project3 from '/imageOfProject3.png'
+import project4 from '/imageOfProject4.png'
+import project5 from '/imageOfProject5.png'
+import imageOfProject1 from '/project11.png'
+import imageOfProject2 from '/project2.png'
+import imageOfProject3 from '/project3.png'
+import imageOfProject4 from '/project4.png'
+import imageOfProject5 from '/project5.png'
 
 const props = defineProps({
-    title: { type: String, default: 'SMOOTHIES' },
-    subtitle: { type: String, default: 'Best healthy refresh smoothie that make benefits for you with different different flavours just for you.' },
+    title: { type: String, default: 'PROJECTS LIST' },
+    subtitle: { type: String, default: 'Here you can see the top projects we are working on ahave an idea of what it demandes to run such a projet. You ca also access directely to the platform on which the projet is been posted' },
     flavours: {
         type: Array,
         default: () => ([
@@ -48,7 +48,7 @@ const props = defineProps({
             }
         ])
     },
-    initialId: { type: String, default: 'blue' },
+    initialId: { type: String, default: 'project1' },
     withAutoplay: { type: Boolean, default: false },
     autoplayDelay: { type: Number, default: 5200 }
 })
@@ -122,9 +122,9 @@ function swapBowl(nextUrl) {
     const inEl = currentImgKey === 'A' ? bowlB.value : bowlA.value
     const outEl = currentImgKey === 'A' ? bowlA.value : bowlB.value
     inEl.src = nextUrl
-    gsap.set(inEl, { autoAlpha: 0, rotate: -3, scale: 0.98 })
+    gsap.set(inEl, { autoAlpha: 0, rotate: -5, scale: 0.98 })
     gsap.timeline({ defaults: { ease: 'power2.out' } })
-        .to(outEl, { autoAlpha: 0, rotate: 3, scale: 0.98, duration: .32 }, 0)
+        .to(outEl, { autoAlpha: 0, rotate: 5, scale: 0.98, duration: .32 }, 0)
         .to(inEl, { autoAlpha: 1, rotate: 0, scale: 1, duration: .38 }, 0.08)
         .set(outEl, { visibility: 'hidden' })
     currentImgKey = currentImgKey === 'A' ? 'B' : 'A'
@@ -240,7 +240,7 @@ function closeDetail() { snapToDetail(false) }
             class="container mx-auto grid grid-cols-1 gap-4 md:gap-8 items-center px-3 md:px-10 pt-safe pb-safe md:min-h-svh md:grid-cols-[1.05fr_1fr]">
             <!-- Colonne gauche -->
             <div class="col left">
-                <div class="brand font-bold tracking-tight/5 opacity-90 mb-2">Smoothie</div>
+                <div class="brand font-bold tracking-tight/5 opacity-90 mb-2">Projects</div>
                 <h1 ref="titleEl"
                     class="title font-extrabold leading-tight tracking-wider text-[clamp(26px,6.2vw,56px)]">
                     {{ title }}
@@ -267,15 +267,14 @@ function closeDetail() { snapToDetail(false) }
 
             <!-- Colonne droite : pager -->
             <div class="col right relative">
-                <div ref="blobEl"
-                    class="blob absolute md:inset-y-0 md:right-[6%] md:left-0 md:m-auto -z-0 hidden sm:block"></div>
+                <div ref="blobEl" class="blob absolute md:inset-y-0 md:right-[6%] md:left-0 -z-0 hidden sm:block"></div>
 
                 <div ref="pager" class="pager relative z-[1] w-full overflow-hidden grid grid-flow-col auto-cols-[100%]
                     overflow-x-auto snap-x snap-mandatory scrollbar-none touch-pan-x overscroll-contain md:mt-2">
                     <!-- SLIDE 1 — Image -->
                     <div class="slide image snap-start py-2">
                         <div ref="bowlWrap"
-                            class="bowl-wrap relative mx-auto aspect-square w-[min(92vw,640px)] content-visibility-auto">
+                            class="bowl-wrap relative  aspect-square w-[min(92vw,640px)] content-visibility-auto">
                             <img ref="bowlA" class="bowl absolute inset-0 w-full h-full object-cover rounded-full"
                                 alt="" draggable="false" />
                             <img ref="bowlB"
