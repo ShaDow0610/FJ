@@ -4,6 +4,17 @@ import { ref, reactive, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 import { gsap } from '@/plugins/gsap'
 import { useReducedMotion } from '@/composables/useReducedMotion'
 
+import project1 from "/project1.jpg"
+import project2 from "/project2.jpg"
+import project3 from "/project3.jpg"
+import project4 from "/project4.jpg"
+import project5 from "/project5.jpg"
+import imageOfProject1 from "/imageOfProject1.jpg"
+import imageOfProject2 from "/imageOfProject2.jpg"
+import imageOfProject3 from "/imageOfProject3.jpg"
+import imageOfProject4 from "/imageOfProject4.jpg"
+import imageOfProject5 from "/imageOfProject5.jpg"
+
 const props = defineProps({
     title: { type: String, default: 'SMOOTHIES' },
     subtitle: { type: String, default: 'Best healthy refresh smoothie that make benefits for you with different different flavours just for you.' },
@@ -11,24 +22,29 @@ const props = defineProps({
         type: Array,
         default: () => ([
             {
-                id: 'blue', bg: '#86a8d8', blob: '#6f93cb', imgBowl: '/assets/smoothie/blue-bowl.webp', thumb: '/assets/smoothie/blue-thumb.webp', alt: 'Blue smoothie bowl',
-                title: 'Blue Energy', desc: 'Antioxydants & fraîcheur éclatante pour bien démarrer.',
-                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'X', href: '#' }]
+                id: 'project1', bg: '#86a8d8', blob: '#6f93cb', imgBowl: project1, thumb: imageOfProject1, alt: 'Blue smoothie bowl',
+                title: 'Outfit Chalenge', desc: 'Antioxydants & fraîcheur éclatante pour bien démarrer.',
+                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'Snapchat', href: '#' }, { label: 'YouTube', href: '#' }, { label: 'Facebook', href: '#' }]
             },
             {
-                id: 'mango', bg: '#f6c24d', blob: '#edb23b', imgBowl: '/assets/smoothie/mango-bowl.webp', thumb: '/assets/smoothie/mango-thumb.webp', alt: 'Mango smoothie bowl',
-                title: 'Golden Mango', desc: 'Sucré–soleil, onctueux et joyeux comme l’été.',
-                socials: [{ label: 'Instagram', href: '#' }, { label: 'YouTube', href: '#' }]
+                id: 'project2', bg: '#f6c24d', blob: '#edb23b', imgBowl: project2, thumb: imageOfProject2, alt: 'Mango smoothie bowl',
+                title: 'Douala Fashion week', desc: 'Sucré–soleil, onctueux et joyeux comme l’été.',
+                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'Snapchat', href: '#' }, { label: 'Facebook', href: '#' }]
             },
             {
-                id: 'berry', bg: '#f08ab0', blob: '#e46c96', imgBowl: '/assets/smoothie/berry-bowl.webp', thumb: '/assets/smoothie/berry-thumb.webp', alt: 'Berry smoothie bowl',
-                title: 'Pink Berries', desc: 'Fruits rouges, peps et vitamines pour performer.',
-                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'Facebook', href: '#' }]
+                id: 'project3', bg: '#f08ab0', blob: '#e46c96', imgBowl: project3, thumb: imageOfProject3, alt: 'Berry smoothie bowl',
+                title: 'Total Relooking', desc: 'Fruits rouges, peps et vitamines pour performer.',
+                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'Snapchat', href: '#' }, { label: 'Facebook', href: '#' }]
             },
             {
-                id: 'kiwi', bg: '#c5e07a', blob: '#b2cf63', imgBowl: '/assets/smoothie/kiwi-bowl.webp', thumb: '/assets/smoothie/kiwi-thumb.webp', alt: 'Kiwi smoothie bowl',
-                title: 'Kiwi Fresh', desc: 'Vert tonique, léger, vif — le coup de clean.',
-                socials: [{ label: 'Instagram', href: '#' }, { label: 'Snapchat', href: '#' }]
+                id: 'project4', bg: '#c5e07a', blob: '#b2cf63', imgBowl: project4, thumb: imageOfProject4, alt: 'Kiwi smoothie bowl',
+                title: 'Dress Up Me', desc: 'Vert tonique, léger, vif — le coup de clean.',
+                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'Snapchat', href: '#' }, { label: 'Facebook', href: '#' }]
+            },
+            {
+                id: 'project5', bg: '#c5e07a', blob: '#b2cf63', imgBowl: project5, thumb: imageOfProject5, alt: 'Kiwi smoothie bowl',
+                title: '10K Relooking', desc: 'Vert tonique, léger, vif — le coup de clean.',
+                socials: [{ label: 'Instagram', href: '#' }, { label: 'TikTok', href: '#' }, { label: 'Snapchat', href: '#' }, { label: 'Facebook', href: '#' }]
             }
         ])
     },

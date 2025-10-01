@@ -5,15 +5,13 @@ import { setMeta } from '@/utils/meta'
 
 // Composants
 import HeroShowcase from '@/components/home/HeroShowcase.vue'
-import IvoryWipe from '@/components/home/IvoryWipe.vue'
 import PersonAscend from '@/components/home/PersonAscend.vue'
 
 // Médias (exemples)
-import bgPoster from '@/assets/a.png'     // utilisé comme poster/fallback
-import bgVideo from '@/assets/Tt.webm' // si tu as une vidéo de fond, décommente et passe-la en prop
-import leftLogo from '@/assets/logo1.png'
-import RightLogo from '@/assets/logo2.png'
-import brandMark from '@/assets/logo.jpg' // si tu veux l'utiliser ailleurs
+import bgPoster from '/tou1.jpg'     // utilisé comme poster/fallback
+import bgVideo from '/Tt.webm' // si tu as une vidéo de fond, décommente et passe-la en prop
+import leftLogo from '/logo1.png'
+import RightLogo from '/logo2.png'
 
 // Données UI
 const occupation = 'Créateur / Visionnaire'
@@ -55,7 +53,7 @@ const sponsors = [
 ]
 
 // Lien site + CTA
-const site = { label: 'Mon site', href: 'https://example.com' }
+const site = { label: 'Creativity by FJ', href: 'https://example.com' }
 const ctaHref = 'https://t.me/ton_canal' // ou autre call-to-action
 
 onMounted(() => {
